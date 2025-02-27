@@ -3,7 +3,7 @@ import React,{useState} from "react";
 function Form() {
 
 
-    const [input, setInput] = useState('');
+    const [name, setName] = useState({firstName:'', lastName:''});
 
     // const handleChanges = (e) => {
     //     setInput(e.target.value);
@@ -12,9 +12,14 @@ function Form() {
 
     return ( 
         <div>
+            <h1>{name.firstName} - {name.lastName}</h1>
             <form>
-                <input onChange={(e)=>setInput(e.target.value)} type="text" value={input}/>
-                <h1>{input}</h1>
+                <label htmlFor="first name">First Name</label>
+                <input onChange={(e)=>setName({...name, firstName:e.target.value})} type="text" value={name.firstName}/>
+                <br />
+                <br />
+                <label htmlFor="last name">Last Name</label>
+                <input onChange={(e)=>setName({...name, lastName: e.target.value})} type="text" value={name.lastName}/>
             </form>
         </div>
 
