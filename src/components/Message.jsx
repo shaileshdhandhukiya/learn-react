@@ -3,7 +3,9 @@ import React from 'react';
 function Message() {
 
     function handleClick() {
-        alert('Hello!');
+        // alert('Hello!');
+        console.log("Hello!");
+        
     }
 
     return (  
