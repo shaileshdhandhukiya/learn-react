@@ -10,6 +10,11 @@ function Form() {
     //     console.log(e.target.value);
     // }
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(name);
+    }
+
     return ( 
         <div>
             <h1>{name.firstName} - {name.lastName}</h1>
@@ -20,6 +25,11 @@ function Form() {
                 <br />
                 <label htmlFor="last name">Last Name</label>
                 <input onChange={(e)=>setName({...name, lastName: e.target.value})} type="text" value={name.lastName}/>
+
+                <br />
+                <br />
+                <button onClick={handleSubmit}>Submit</button>
+
             </form>
         </div>
 
