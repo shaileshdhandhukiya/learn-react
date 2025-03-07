@@ -2,7 +2,7 @@ import "./App.css";
 
 import React, { useEffect, useState } from "react";
 import { FamilyContext } from "./components/prop-drilling/FamilyContext";
-import CounterUseMemo from "./components/CounterUseMemo";
+import UseRef from "./components/UseRef";
 
 import Family from "./components/prop-drilling/Family";
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       {/* <FamilyContext.Provider value={familyMessage}> */}
-        <CounterUseMemo />
+        <UseRef />
       {/* </FamilyContext.Provider> */}
     </>
   );
