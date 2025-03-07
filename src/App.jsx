@@ -1,17 +1,20 @@
-import './App.css'
+import "./App.css";
 
-import React,{ useEffect, useState } from 'react'
-// import Message from './components/Message';
-// import Counter from './components/Counter';
-import Form from './components/Form'
-import Ue1 from './components/Ue1';
+import React, { useEffect, useState } from "react";
+
+import Family from "./components/prop-drilling/Family";
 
 function App() {
+
+  const familyMessage = {
+    familyName: "The Smiths",
+  };
+
   return (
     <>
-      <Ue1 />
+      <Family message={familyMessage} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
