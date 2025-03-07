@@ -1,8 +1,8 @@
 import React from "react";
 
-function GrandSon({message}) {
+function GrandSon() {
     return ( 
-        <h2>Grand son component {message.familyName}</h2>
+        <h2>Grand son component</h2>
      );
 }
 

@@ -18,6 +18,7 @@ function Counter() {
     function incrementFactor(){
         setFactor(factor+1);
     }
+    
     function decrementFactor(){
         if(count==0){
             return;

@@ -1,13 +1,11 @@
 import Parent from "./Parent";
 
-function Family({message}) {
+function Family() {
 
-    console.log(message);
-    
     return (  
         <div className="family">
             <h1>Family</h1>
-            <Parent message={message} />
+            <Parent  />
         </div>
     );
 }

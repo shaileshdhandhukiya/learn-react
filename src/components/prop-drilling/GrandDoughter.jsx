@@ -1,8 +1,8 @@
 import React from "react";
 
-function GrandDoughter({message}) {
+function GrandDoughter() {
     return ( 
-        <h2>Grand doughter component {message.familyName}</h2>
+        <h2>Grand doughter component </h2>
      );
 }
 
